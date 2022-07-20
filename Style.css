@@ -1,31 +1,35 @@
 /* Roboto font link */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Common style or Utilities  */
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
 }
+
 .container {
     width: 1140px;
     margin: auto;
     margin-top: 20px;
 }
+
 /* Header style */
 .headBaner {
     background: black;
     color: white;
     display: flex;
-    padding: 0 80px;
-    border-radius: 30px;
-    
+    padding: 0 5rem;
+    border-radius:1.8rem;
 }
 
 .banerContent {
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .banarImg {
@@ -33,9 +37,9 @@ body{
 }
 
 .banerContent h1 {
-    font-size: 69px;
+    font-size: 5rem;
     font-weight: 700;
-    margin: 18px 0;
+    margin: 0.2rem;
 }
 
 .banerContent p {
@@ -47,30 +51,35 @@ body{
 
 .WatchBtn {
     text-decoration: none;
+    width: 130px;
     color: white;
+    text-align: center;
     background: red;
-    padding: 12px 30px;
+    padding: 14px 20px;
     border-radius: 5px;
     font-size: 16px;
-    transition: ease-out,0.4s;
+    transition: ease-out, 0.4s;
 }
+
 .WatchBtn:hover {
-   box-shadow: inset 200px 0 0 0 gray;
+    box-shadow: inset 200px 0 0 0 gray;
     color: white;
-    
-    
 }
+
 #arrowIcon {
     margin-left: 10px;
     font-size: 14px;
 }
+
 .banarImg img {
     width: 100%;
 }
+
 /* Article style */
-#PlayersArticl{
-    margin:100px 0px;
+#PlayersArticl {
+    margin: 100px 0px;
 }
+
 /* .mainBox {
     width: 263px;
     background: black;
@@ -91,40 +100,49 @@ body{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    border-radius: 12px;
     justify-content: space-evenly;
 }
+
 .matchLink a {
-    
-text-decoration: none;
-    
-color: gray;
-    
-background: white;
-    
-padding: 11px 35px;
-    
-border-radius: 9px;
+    text-decoration: none;
+
+    color: gray;
+
+    background: white;
+
+    padding: 11px 35px;
+
+    border-radius: 9px;
 }
+
 a#redBtn {
     background: red;
     color: white;
 }
+
 /* single article style */
 .article {
     display: flex;
     margin-bottom: 30px;
 }
-.articleWrapper {display: grid;grid-template: repeat(3,1fr)/repeat(3,1fr);grid-gap: 24px;margin-left: 26px;}
+
+.articleWrapper {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-left: 26px;
+}
 
 .singleArticle {
     border: 2px solid #dbdbdb;
     border-radius: 13px;
 }
+
 .singleArticle img {
     margin-bottom: 26px;
     width: 100%;
 }
+
 .singleArticle a {
     text-decoration: none;
     border: 1px solid black;
@@ -135,20 +153,25 @@ a#redBtn {
     font-weight: 500;
 }
 
+.artecleImgInfo {
+    padding-left: 15px;
+}
 
-.artecleImgInfo {padding-left: 15px;}
 .singleArticle h4 {
     margin: 20px 0;
     line-height: 26px;
     font-size: 17px;
     font-weight: 500;
 }
+
 span.chatIcon {
     margin-left: 30px;
 }
+
 .timeAndChat {
     margin-bottom: 14px;
 }
+
 .viewBtn {
     text-align: center;
     visibility: hidden;
@@ -163,9 +186,13 @@ span.chatIcon {
     font-weight: 600;
     border-radius: 8px;
 }
+
 /* Footer Style */
 footer#footerArea {
     background: black;
+}
+.footerWrapp{
+    width: 100%;
 }
 .footerInfo h1 {
     color: white;
@@ -194,12 +221,95 @@ hr {
 .footerInfo {
     padding: 63px 20px;
 }
+
 .footerSocial a {
     padding: 6px;
+    font-size: 24px;
 }
 
 .footerSocial i {
-    color: #aba3a3
+    color: #aba3a3;
 }
 
-.footerSocial {text-align: center;}
+.footerSocial {
+    text-align: center;
+}
+
+/* Media Queries start */
+/* Media queries for Mobile view */
+@media only screen and  (max-width: 576px) {
+   
+    .headBaner {
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+       
+    }
+   
+    .articleWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+   
+    .singleArticle{
+        width:100%;
+    }
+    #footerArea{
+        background:rgb(37, 36, 36);
+        width:100%;
+    }
+   
+    .footerLink{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+    
+
+/* Media queries for tablet view */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .banarImg img {
+        
+        background-position:100%;
+        background-size: cover;
+    }
+    
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .articleWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #displayNone{
+        display:none;
+    }
+    .viewBtn {
+        text-align: center;
+        visibility: visible;
+    }
+   
+    .footerLink {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+     
+    
+        
+    }
+    
+   
+    
+}
