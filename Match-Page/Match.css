@@ -30,7 +30,6 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 22px;
 }
 
 .banarImg {
@@ -76,8 +75,6 @@ body {
     font-size: 14px;
 }
 
-
-
 /* Article style */
 #PlayersArticl {
     margin: 100px 0px;
@@ -122,7 +119,40 @@ a#redBtn {
     background: red;
     color: white;
 }
+/* flag style */
+.flagsDiv {
+    border: 2px solid #ebdfdf;
+    border-radius: 8px;
+    padding: 30px 20px;
+}
 
+.flagImg {
+    display: flex;
+    justify-content: center;
+    margin: 17px 10px;
+}
+
+.flagTitle {
+    text-align: center;
+}
+
+.flagImg span {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.flagTitle h4 {
+    padding-bottom: 9px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.flagTitle span {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
 /* single article style */
 .article {
     display: flex;
@@ -131,7 +161,7 @@ a#redBtn {
 
 .articleWrapper {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 24px;
     margin-left: 26px;
 }
@@ -247,7 +277,7 @@ hr {
     .headBaner {
         display: flex;
         flex-direction: column;
-    align-items: center;
+        align-items: center;
     }
     .banerContent h1 {
         font-size: 19px;
@@ -274,7 +304,7 @@ hr {
     
     }
    
-    .singleArticle{
+    .flagsDive{
         width:100%;
     }
     #footerArea{
@@ -282,7 +312,11 @@ hr {
         width:100%;
     }
    
-    
+    .footerLink{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .footerLink {
         display: flex;
         flex-direction: column;
@@ -296,10 +330,12 @@ hr {
     .container {
         width: 100%;
     }
+    
    
     .banarImg img {
         width: 100%;
     }
+    
     .article {
         display: flex;
         flex-direction: column;
